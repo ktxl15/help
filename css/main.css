@@ -1,0 +1,235 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	transition: .7s;
+}
+.top{
+	background: url(../img/81f6dedbc12095550b95751169adca87.jpeg)no-repeat fixed;
+	background-size: 100% 100%;
+	height: 90vh;
+	width: 100%;
+	border: 1px solid transparent;
+}
+.top-w{
+	width: 60%;
+	height: 90vh;
+	margin: 0 auto;
+}
+.tophead{
+	height: 16vh;
+	width: 16vh;
+	border-radius: 1000px;
+	margin: 0 auto;
+	background: url(../img/5zy153ch.bmp) no-repeat ;
+	background-size: 100% 150%;
+	box-shadow: 0 0 20px pink;
+	cursor: pointer;
+}
+.addtophead{
+	transform: rotate(720deg);
+}
+.toptext{
+	width: 100%;
+	font-size: 4rem;
+	text-align: center;
+	margin-top: 7rem;
+	color: pink;
+	text-shadow: 0 10px .2rem aqua;
+	font-family: "script mt bold";
+}
+.topbor{
+	height: 80%;
+	width: 90%;
+	border: .2rem solid white;
+	margin: 0 auto;
+	margin-top: 2.3rem;
+	padding-top: 2rem;
+	background: url(../img/81f6dedbc12095550b95751169adca87.jpeg) no-repeat;
+	background-size: 100% 100%;
+}
+.navi{
+	background: linear-gradient(to left,skyblue,pink);
+	height: 10vh;
+	width: 100%;
+	border: .1rem solid pink;
+	position: relative;
+}
+.addnavi{
+	position: fixed;
+	top: 0;
+	border-radius: 0 0 4rem 4rem;
+}
+.navi-w{
+	height: 10vh;
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+}
+.logo{
+	height: 10vh;
+	width: 10%;
+	font-size: 4.3rem;
+	font-weight: 900;
+	font-family: "edwardian script itc";
+	text-align: center;
+	color: skyblue;
+	text-shadow: -.2rem .3rem .1rem yellow;
+}
+.naviul{
+	height: 10vh;
+	width: 80%;
+	display: flex;
+	margin-left: 40rem;
+}
+.navili{
+	height: 10vh;
+	width: 10rem;
+	margin-left: 30px;
+	color: white;
+	text-align: center;
+	font-size: 2.4rem;
+	font-family:"eras demi itc";
+	line-height: 6rem;
+	cursor: pointer;
+}
+.addnavili{
+	background-color: pink;
+	transform: rotateX(360deg);
+}
+.navili:hover{
+	background-color: pink;
+	transform: rotateX(360deg);
+}
+.content{
+	background-color: red;
+	height: 80vh;
+	width: 100%;
+	background:url(../img/b000b175702d490e0aa521767d012dc5.jpeg) no-repeat fixed;
+	background-size: 100%100%;
+	border: solid transparent;
+}
+.contenttext{
+	font-size: 4rem;
+	text-align: center;
+	font-family: "felix titling";
+	margin-top: 20rem;
+	color: white;
+	text-shadow: .3rem .3rem .1rem black;
+}
+.fengge{
+	background-color: white;
+	height: 40vh;
+	width: 100%;
+	font-size: 3rem;
+	text-align: center;
+	font-family: "felix titling";
+	line-height: 23rem;
+}
+.addfengge{
+	width: 100%;
+}
+.content1{
+	background-color: red;
+	height: 80vh;
+	width: 100%;
+	background:url(../img/d71602776bb1d54582ae03e2c0a276cd.jpeg) no-repeat fixed;
+	background-size: 100%100%;
+	border: solid transparent;
+}
+.contenttext1{
+	font-size: 4rem;
+	text-align: center;
+	font-family: "felix titling";
+	margin-top: 20rem;
+	color: white;
+	text-shadow: .3rem .3rem .1rem black;
+}
+.content2{
+	background-color: red;
+	height: 80vh;
+	width: 100%;
+	background:url(../img/e54d7b1496f83e6d42f94df682b20bc8.jpeg) no-repeat fixed;
+	background-size: 100%100%;
+	border: solid transparent;
+}
+.contenttext2{
+	font-size: 4rem;
+	text-align: center;
+	font-family: "felix titling";
+	margin-top: 20rem;
+	color: white;
+	text-shadow: .3rem .3rem .1rem black;
+}
+.foot{
+	height: 100vh;
+	width: 100%;
+	background:url(../img/05db33db46a06957dde47f49a9f13add.jpeg) no-repeat fixed;
+	background-size: 100% 100%;
+	border: 1px solid transparent;
+}
+.foot-w{
+	width: 80%;
+	height: 70%;
+	margin: 0 auto;
+	margin-top: 10rem;
+	display: flex;
+	box-shadow: 0 0 .8rem black;
+	background-color: white;
+}
+.intleft{
+	height: 100%;
+	width: 70%;
+	background: url(../img/05db33db46a06957dde47f49a9f13add.jpeg)no-repeat;
+	background-size: 100% 100%;
+}
+.intright{
+	width: 30%;
+	height: 100%;
+}
+.intright h1{
+	font-size: 2.4rem;
+	line-height: 7rem;
+	text-align: center;
+}
+.boxint1{
+	height: 8vh;
+	margin-top: 1rem;
+}
+.boxint1 input{
+	border: 0 ;
+	height: 100%;
+	width: 20rem;
+	font-size: 1.4rem;
+	font-family: "franklin gothic demi cond";
+	outline: none;
+	border-bottom: .3rem solid purple;
+	margin-left: 4rem;
+}
+.fottop{
+	display: block;
+	color: purple;
+	margin-top: 3.5rem;
+	margin-left: 14rem;
+	cursor: pointer;
+}
+.intright button{
+	margin-left: 5rem;
+	height: 4rem;
+	width: 18rem;
+	border: 0;
+	background-image: linear-gradient(to left,pink,skyblue);
+	border-radius: 4rem;
+	font-size: 2rem;
+	cursor: pointer;
+	font-family: "franklin gothic medium";
+	color: purple;
+}
+.intright button:hover{
+	color: white;
+	opacity: .6;
+}
+.addbutton{
+	color: white;
+	opacity: .6;
+}

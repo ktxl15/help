@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<title>Alive-OvO</title>
+		<style type="text/css">
+			@media (max-width:700px) and (min-width:360px) {
+				.top{
+					height: 40vh;
+				}
+				.top-w{
+					height: 40vh;
+				}
+				.toptext{
+					margin-top: -.3rem;
+					font-size: 1.3rem;
+				}
+				.topbor{
+					height: 60%;
+				}
+				.tophead{
+					height: 12vh;
+					width: 12vh;;
+				}
+				.navi{
+					height: 5vh;
+				}
+				.navi-w{
+					width: 90%;
+					height: 5vh;
+				}
+				.logo{
+					height: 5vh;
+					width: 25%;
+					font-size: 2rem;
+				}
+				.naviul{
+					height: 6vh;
+					margin-left: 2.3rem;
+				}
+				.navili{
+					height: 5vh;
+					font-size: .7rem;
+					line-height: 3rem;
+					width: 3rem;
+					margin-left: .8rem;
+				}
+				.content{
+					height: 20vh;
+				}
+				.contenttext{
+					margin-top: 4rem;
+					font-size: 1rem;
+				}
+				.fengge{
+					height: 10vh;
+					line-height: 0;
+					font-size: .5rem;
+					line-height: 5rem;
+				}
+				.content1{
+					height: 20vh;
+					background-size: 100rem 100%;
+				}
+				.contenttext1{
+					margin-top: 4rem;
+					font-size: 1rem;
+				}
+				.content2{
+					height: 20vh;
+				}
+				.contenttext2{
+					margin-top: 4rem;
+					font-size: 1rem;
+					background-size: 180rem 100%;
+				}
+				.foot{
+					background-color: #FFC0CB;
+					background: url(img/05db33db46a06957dde47f49a9f13add.jpeg);
+					background-size: 100% 100%;
+					height: 20vh;
+				}
+				.foot-w{
+					margin-top: 2.4rem;
+				}
+				.intleft{
+					
+				}
+				.intright h1{
+					line-height: 0;
+					font-size: .6rem;
+					margin-top: .8rem;
+				}
+				.boxint1{
+					margin-top: .7rem;
+					height: .3rem;
+				}
+				.boxint1 input{
+					margin-left: 1rem;
+					width: 3.4rem;
+					font-size: .2rem;
+					border-bottom: .1rem solid purple;
+					margin-bottom: .8rem;
+				}
+				.fottop{
+					margin-top: 1.4rem;
+					margin-left: 1.4rem;
+					font-size: .3rem;
+				}
+				.intright button{
+					margin-left: 1.3rem;
+					height: 1rem;
+					width: 3rem;
+					font-size: .4rem;
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<div class="topbor">
+			<div class="top-w">
+				<div class="tophead"></div>
+				<div class="toptext">[Believe in yourself.]</div>
+			</div>
+			</div>
+		</div>
+		<div class="navi">
+			<div class="navi-w">
+				<div class="logo">Alive</div>
+				<ul class="naviul">
+					<li class="navili">Home</li>
+					<li class="navili">Content</li>
+					<li class="navili">Aboutme</li>
+					<li class="navili">The last</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<div class="contenttext">Travel teaches people tolerant of virtue.</div>
+		</div>
+		<div class="fengge">I’ll think of you every step of the way.</div>
+		<div class="content1">
+			<div class="contenttext1">You may be out of my sight, but never out of my mind.</div>
+		</div>
+		<div class="fengge">Never trouble trouble till trouble troubles you. </div>
+		<div class="content2">
+			<div class="contenttext2">You may be out of my sight, but never out of my mind.</div>
+		</div>
+		<div class="fengge">Think great thoughts and you will be great! </div>
+		<div class="foot">
+			<div class="foot-w">
+				<div class="intleft"></div>
+				<div class="intright">
+					<h1>Login/Register</h1>
+					<div class="boxint1"><input type="text" name="" id="" value="" placeholder="USER NAME"/></div>
+					<div class="boxint1"><input type="text" name="" id="" value="" placeholder="ACCOUNT"/></div>
+					<div class="boxint1"><input type="password" name="" id="" value="" placeholder="PASSWORD"/></div>
+					<span class="fottop">Forget the password?</span><br>
+					<button type="button" class="btn">Login</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+				$('.tophead').addClass('addtophead')
+				$(window).scroll(function(){
+					var hei = $('.top').height()
+					var top = $(window).scrollTop()
+					if(top>hei){
+						$('.navi').addClass('addnavi')
+					}else{
+						$('.navi').removeClass('addnavi')
+					}
+				})
+				$('.btn').click(function(){
+					$('.btn').toggleClass('addbutton')
+				})
+				$('body').click(function(){
+					var hei = $('.top').height()
+					var top = $(window).scrollTop()
+					if(top>hei){
+						$('.navi').addClass('addnavi')
+					}else{
+						$('.navi').removeClass('addnavi')
+					}
+				})
+				$('.navili').click(function(){
+					index = $(this).index()
+					$('.navili').eq(index).addClass('addnavili').siblings().removeClass('addnavili')
+					var hei = $('.top').height()+$('.fengge').height()
+					var to = index*hei
+					$('html,body').animate({'scrollTop':to},800)
+				})
+				$(window).scroll(function(){
+					var top = $(window).scrollTop()
+					var ad = $('.top').height()+$('.fengge').height()
+					var hei = top/ad
+					var c = Math.ceil(hei)
+					$('.navili').eq(c).addClass('addnavili').siblings().removeClass('addnavili')
+				})
+				
+			})
+	
+	</script>
+</html>
